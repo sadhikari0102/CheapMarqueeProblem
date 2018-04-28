@@ -1,0 +1,8 @@
+SOLUTION EXPLAINATION:
+
+The solution uses the classical sliding window technique, where window size remains constant (width of the marquee)
+We maintain a pixel map for every legal character to be displayed in the marquee, in form of an array (size of the width of a character in pixels).
+First we fill the window to its limit using the pixel map and the input message.
+After the end of first loop, either the window is full, or the message is exhausted. In the latter case, we return the number of pixels lit in the window currently.
+In former case,next loop iterates over characters from message and their respective maps, and everytime, first pixel width is removed from the window and a new one is added.
+In every iteration, the new count for pixels is updated and max(is possible) is updated.
