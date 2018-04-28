@@ -1,6 +1,6 @@
 SOLUTION EXPLAINATION:
 
-The solution uses the classical sliding window technique, where window size remains constant (width of the marquee)
+The solution uses the classical sliding window technique, where window size remains constant (width of the marquee).
 We maintain a pixel map for every legal character to be displayed in the marquee, in form of an array (size of the width of a character in pixels).
 First we fill the window to its limit using the pixel map and the input message.
 After the end of first loop, either the window is full, or the message is exhausted. In the latter case, we return the number of pixels lit in the window currently.
